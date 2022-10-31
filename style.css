@@ -1,0 +1,47 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poor+Story&family=Roboto+Condensed&display=swap');
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poor Story', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+/*General Usage*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-container{
+  max-width: 100vw;
+  min-height: 150vh;
+  display: grid;
+  grid-template: 1fr 3fr 1fr / 1fr;
+}
+/*Header*/
+header{
+background-color: #60a5fa;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+color: white;
+font-family: 'Josefin Sans', sans-serif;
+
+
+}
+header p {
+  align-self: flex-end;
+  position: absolute;
+  margin-bottom: 1rem;
+
+font-family: 'Roboto Condensed', sans-serif; 
+
+}
+main{
+  background-color: #e7e5e4;
+}
+footer{
+  background-color: #60a5fa;
+}
