@@ -42,7 +42,6 @@ main{
   background-color: #e7e5e4;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 main .choice:nth-child(1){/*The input-type div*/
@@ -51,10 +50,6 @@ margin-top: 2rem;
 main .choice:nth-child(2){/*The input-type div*/
   margin-bottom: 2rem; 
 } 
-
-.input{
-  visibility: hidden;
-}
 .choice{
   width: clamp(60vw,  20em, 100vw);
   height: 42%;
@@ -62,6 +57,28 @@ main .choice:nth-child(2){/*The input-type div*/
   border-radius: 1rem;
   display: grid;
   grid-template: 1fr / 1fr 1fr 1fr;
+  position: relative;
+   
+}
+.choice > div{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 2rem;
+ border: 1px solid #60a5fa;
+ z-index: 0;
+ transition: ease 0.4s;
+}
+ .choice h1 {
+  margin: auto 0;
+ }
+.choice > *:hover{
+ background-color: wheat; 
+ scale: 105%;
+ transition: ease 0.4s;
+ z-index: 1;
+ cursor: pointer;
 }
 
 footer{
