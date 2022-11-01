@@ -59,27 +59,51 @@ main .choice:nth-child(2){/*The input-type div*/
   display: grid;
   grid-template: 1fr / 1fr 1fr 1fr;
   position: relative;
-   
+  font-family: 'Josefin Sans', sans-serif;
 }
 .choice > div{
+ position: relative;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
  padding: 2rem;
- border: 1px solid #60a5fa;
- z-index: 0;
- transition: ease 0.4s;
+ 
+}
+
+input[type="radio"]{
+  appearance: none;
+  position: absolute;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #60a5fa;
+  z-index: 0;
+  transition: ease 0.4s;
+}
+input[type="radio"]:checked{
+  background-color: wheat;
 }
  .choice h1 {
-  margin: auto 0;
- }
-.choice > *:hover{
+  position: absolute;
+  z-index: 1;
+}
+.choice p{
+  position: absolute;
+  bottom: 1rem;
+  z-index: 1;
+}
+.choice input[type="radio"]:hover{
  background-color: wheat; 
+ cursor: pointer;
+ z-index: 1;
  scale: 105%;
  transition: ease 0.4s;
- z-index: 1;
- cursor: pointer;
+}
+input[type="radio"]:hover ~ * {
+  scale: 105%;
+  transition: ease 0.4s;
 }
 /*Footer*/
 footer{
@@ -124,6 +148,3 @@ footer > div {
   scale: 95%;
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
 }
-/* .output{
-visibility:hidden;
-} */
