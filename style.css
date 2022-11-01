@@ -125,14 +125,17 @@ footer > div {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.75rem;
 }
-#input,
+#input, 
 #output{
   width: 40%;
-  height: 20%;
+  height: 20%; 
   padding: 1rem;
   outline: none;
   border: 2px solid #8b5cf6;
+  background-color: white;
+
 }
+
 #convert{
   padding: 0.75rem;
   width: 10rem;
